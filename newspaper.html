@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Day — Tuesday, 24 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; }
+  .page {
+    width: 1024px; height: 1024px; overflow: hidden;
+    background: #fffef9; color: #111;
+    padding: 12px 36px 4px;
+    font-family: "Liberation Serif", "Noto Serif", serif;
+  }
+  /* ---------- top line ---------- */
+  .topline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "Liberation Sans", sans-serif; font-size: 10px;
+    letter-spacing: 2.2px; text-transform: uppercase; color: #222;
+    border-bottom: 1px solid #111; padding-bottom: 5px;
+  }
+  .topline b { color: #a31212; font-weight: 700; }
+  /* ---------- masthead ---------- */
+  .masthead {
+    text-align: center; padding: 5px 0 4px;
+    font-family: "Noto Serif Display", "Liberation Serif", serif;
+    font-weight: 800; font-size: 50px; line-height: 1; letter-spacing: -0.5px;
+    color: #111; white-space: nowrap;
+  }
+  .masthead .red { color: #a31212; }
+  .doublerule { border-top: 3px solid #111; border-bottom: 1px solid #111; height: 4px; }
+  .dateline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "Liberation Sans", sans-serif; font-size: 10.5px;
+    letter-spacing: 2.4px; text-transform: uppercase; color: #222;
+    padding: 5px 0 7px; border-bottom: 1px solid #111; margin-bottom: 8px;
+  }
+  .dateline .d { font-weight: 700; color: #111; }
+  /* ---------- kickers / headlines / body ---------- */
+  .kicker {
+    font-family: "Liberation Sans", sans-serif; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 2.6px; text-transform: uppercase; color: #a31212; margin-bottom: 4px;
+  }
+  .kicker.black { color: #111; }
+  h1 {
+    font-family: "Noto Serif Display", "Liberation Serif", serif;
+    font-weight: 800; font-size: 38px; line-height: 1.04; letter-spacing: -0.3px;
+  }
+  h2 {
+    font-family: "Noto Serif Display", "Liberation Serif", serif;
+    font-weight: 800; font-size: 25px; line-height: 1.08; letter-spacing: -0.2px;
+  }
+  h3 {
+    font-family: "Noto Serif Display", "Liberation Serif", serif;
+    font-weight: 800; font-size: 19px; line-height: 1.1; letter-spacing: -0.2px;
+  }
+  .deck {
+    font-family: "Liberation Serif", serif; font-style: italic;
+    font-size: 15px; line-height: 1.3; color: #333; margin-top: 5px;
+  }
+  p.body {
+    font-size: 13px; line-height: 1.42; text-align: justify; color: #1a1a1a;
+  }
+  p.body + p.body { text-indent: 14px; }
+  .dropcap::first-letter {
+    font-family: "Noto Serif Display", serif; font-weight: 800;
+    font-size: 44px; line-height: 0.85; float: left;
+    padding: 3px 7px 0 0; color: #111;
+  }
+  .byline {
+    font-family: "Liberation Sans", sans-serif; font-size: 9.5px;
+    letter-spacing: 1.6px; text-transform: uppercase; color: #555; margin-top: 5px;
+  }
+  .rule { border-top: 1px solid #111; margin: 4px 0; }
+  .rule.thick { border-top: 3px solid #111; }
+  .caption {
+    font-family: "Liberation Serif", serif; font-style: italic;
+    font-size: 11.5px; line-height: 1.35; color: #444; margin-top: 4px;
+  }
+  .caption b { font-style: normal; font-family: "Liberation Sans", sans-serif;
+    font-size: 9px; letter-spacing: 1.8px; color: #111; }
+  .photo { border: 1px solid #111; display: block; }
+  .cols { display: flex; gap: 16px; }
+  .cols > div { flex: 1 1 0; min-width: 0; }
+  .vrule { border-left: 1px solid #999; padding-left: 16px; }
+  .vrule:first-child { border-left: none; padding-left: 0; }
+  /* ---------- lead ---------- */
+  .lead-head { text-align: left; margin-bottom: 8px; }
+  .lead-deck { margin-bottom: 8px; }
+  .lead-text { margin-top: 7px; }
+  /* ---------- zones ---------- */
+  .zone-b { margin-top: 2px; }
+  .zone-b .gaza-pic { margin-bottom: 7px; width: 100%; height: auto; }
+  .zone-c { margin-top: 2px; }
+  .zone-d { margin-top: 2px; }
+  .stacked .second { border-top: 1px solid #999; margin-top: 9px; padding-top: 9px; }
+  /* ---------- also today / footer ---------- */
+  .also {
+    border-top: 3px solid #111; border-bottom: 1px solid #111;
+    padding: 4px 0; margin-top: 6px;
+    font-size: 12px; line-height: 1.45; color: #1a1a1a;
+  }
+  .also b {
+    font-family: "Liberation Sans", sans-serif; font-size: 10px;
+    letter-spacing: 2.4px; color: #a31212; text-transform: uppercase;
+  }
+  .footer {
+    display: flex; justify-content: space-between;
+    font-family: "Liberation Sans", sans-serif; font-size: 9px;
+    letter-spacing: 1.4px; text-transform: uppercase; color: #555;
+    padding-top: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="topline">
+    <span>World Edition</span>
+    <span>Tuesday, 24 November 2026</span>
+    <span>Ten Stories &middot; <b>One Day</b></span>
+  </div>
+
+  <div class="masthead">THE WORLD <span class="red">IN ONE DAY</span></div>
+  <div class="doublerule"></div>
+
+  <div class="dateline">
+    <span>Vol. XXIV &middot; No. 328</span>
+    <span class="d">Tuesday, 24 November 2026</span>
+    <span>Price: One Day&rsquo;s News</span>
+  </div>
+
+  <!-- ============ LEAD ============ -->
+  <div class="kicker">Middle East &middot; The Blockade</div>
+  <h1 class="lead-head">Iran Vows to Defy U.S. Naval Blockade as Gulf Tensions Deepen</h1>
+  <div class="deck lead-deck">Tehran says it will use all its tools against the blockade, as Washington&rsquo;s envoys meet Qatar&rsquo;s premier.</div>
+
+  <svg class="photo" width="952" height="84" viewBox="0 0 952 88" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2e3d5c"/>
+        <stop offset="0.55" stop-color="#7d6a58"/>
+        <stop offset="0.78" stop-color="#d99a4e"/>
+        <stop offset="1" stop-color="#e8b25e"/>
+      </linearGradient>
+      <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#233649"/>
+        <stop offset="1" stop-color="#101e2c"/>
+      </linearGradient>
+      <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#f2c14e" stop-opacity="0.85"/>
+        <stop offset="1" stop-color="#f2c14e" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="952" height="69" fill="url(#sky)"/>
+    <ellipse cx="180" cy="20" rx="150" ry="5" fill="#1d2a42" opacity="0.55"/>
+    <ellipse cx="700" cy="15" rx="190" ry="4" fill="#1d2a42" opacity="0.45"/>
+    <ellipse cx="880" cy="26" rx="110" ry="4" fill="#1d2a42" opacity="0.5"/>
+    <circle cx="476" cy="69" r="47" fill="url(#glow)"/>
+    <circle cx="476" cy="69" r="13" fill="#f6cf6d"/>
+    <rect y="69" width="952" height="19" fill="url(#sea)"/>
+    <g stroke="#8fa8bf" stroke-width="1" opacity="0.45">
+      <path d="M0 74 H952"/><path d="M0 79 H952"/><path d="M0 84 H952"/>
+    </g>
+    <g stroke="#f2c14e" stroke-width="1.2" opacity="0.8">
+      <path d="M446 74 H506"/><path d="M456 79 H496"/><path d="M466 84 H486"/>
+    </g>
+    <!-- left warship -->
+    <g fill="#0b1420">
+      <path d="M150 69 L150 78 L330 78 L352 69 Z"/>
+      <path d="M196 69 L196 62 L262 62 L262 69 Z"/>
+      <path d="M232 62 L232 56 L242 56 L242 62 Z"/>
+      <rect x="300" y="64" width="6" height="5"/>
+    </g>
+    <g fill="#f2c14e">
+      <circle cx="210" cy="73" r="2"/><circle cx="252" cy="73" r="2"/>
+      <circle cx="296" cy="73" r="2"/><circle cx="330" cy="73" r="2"/>
+      <circle cx="237" cy="54" r="2"/>
+    </g>
+    <!-- right warship -->
+    <g fill="#0b1420">
+      <path d="M600 69 L600 78 L780 78 L802 69 Z"/>
+      <path d="M650 69 L650 62 L716 62 L716 69 Z"/>
+      <path d="M686 62 L686 56 L696 56 L696 62 Z"/>
+      <rect x="742" y="64" width="6" height="5"/>
+    </g>
+    <g fill="#f2c14e">
+      <circle cx="664" cy="73" r="2"/><circle cx="706" cy="73" r="2"/>
+      <circle cx="750" cy="73" r="2"/><circle cx="784" cy="73" r="2"/>
+      <circle cx="691" cy="54" r="2"/>
+    </g>
+    <!-- blockade line -->
+    <g>
+      <line x1="476" y1="20" x2="476" y2="88" stroke="#c81e1e" stroke-width="3" stroke-dasharray="8 6" opacity="0.9"/>
+      <line x1="476" y1="20" x2="476" y2="88" stroke="#ff6b5e" stroke-width="7" stroke-dasharray="8 6" opacity="0.28"/>
+    </g>
+  </svg>
+  <div class="caption">Two warships hold position in the Gulf on Tuesday, as Tehran vowed to use all its tools against the American blockade, first imposed on 13 April, lifted in June and reinstated on 14 July. <b>&mdash; Illustration</b></div>
+
+  <div class="cols lead-text">
+    <div><p class="body dropcap">Tehran said on Tuesday it would use all its tools to confront the American naval blockade. Iran&rsquo;s foreign ministry spokesman, Esmaeil Baghaei, said the blockade would be met with every means at Iran&rsquo;s disposal.</p></div>
+    <div><p class="body">The blockade was first imposed on 13 April, lifted in June and reinstated on 14 July. In Washington, Vice President JD Vance and Secretary of State Marco Rubio met separately with Qatar&rsquo;s prime minister, Sheikh Mohammed bin Abdulrahman Al Thani.</p></div>
+    <div><p class="body">The Qatari premier warned the Middle East could not afford another escalation between the United States and Iran.</p></div>
+  </div>
+
+  <div class="rule thick"></div>
+
+  <!-- ============ ZONE B: Gaza (2 cols) + Zaporizhzhia + NATO ============ -->
+  <div class="cols zone-b">
+    <div style="flex: 2 1 0;">
+      <div class="kicker">Gaza &middot; Targeted Strike</div>
+      <svg class="photo gaza-pic" width="468" height="38" viewBox="0 0 468 38" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3a2b4d"/>
+            <stop offset="0.6" stop-color="#8a4a3c"/>
+            <stop offset="1" stop-color="#d98a4a"/>
+          </linearGradient>
+        </defs>
+        <rect width="468" height="38" fill="url(#gsky)"/>
+        <circle cx="392" cy="10" r="5" fill="#f2c14e" opacity="0.9"/>
+        <g fill="#14101c">
+          <rect x="0" y="21" width="34" height="17"/><rect x="40" y="17" width="26" height="21"/>
+          <rect x="72" y="23" width="40" height="15"/><rect x="118" y="14" width="24" height="24"/>
+          <rect x="148" y="21" width="36" height="17"/><rect x="190" y="17" width="28" height="21"/>
+          <rect x="224" y="24" width="34" height="14"/><rect x="264" y="14" width="22" height="24"/>
+          <rect x="292" y="21" width="38" height="17"/><rect x="336" y="18" width="26" height="20"/>
+          <rect x="368" y="23" width="36" height="15"/><rect x="410" y="17" width="28" height="21"/>
+          <rect x="444" y="21" width="24" height="17"/>
+          <path d="M118 14 L118 9 L124 6 L130 9 L130 14 Z"/>
+        </g>
+        <g fill="#f2c14e">
+          <rect x="48" y="19" width="4" height="3"/><rect x="88" y="26" width="4" height="3"/>
+          <rect x="126" y="17" width="4" height="3"/><rect x="198" y="21" width="4" height="3"/>
+          <rect x="272" y="18" width="4" height="3"/><rect x="344" y="21" width="4" height="3"/>
+          <rect x="418" y="21" width="4" height="3"/><rect x="232" y="26" width="4" height="3"/>
+        </g>
+        <ellipse cx="90" cy="11" rx="46" ry="2" fill="#2a1f38" opacity="0.6"/>
+        <ellipse cx="330" cy="7" rx="60" ry="2" fill="#2a1f38" opacity="0.5"/>
+      </svg>
+      <h2>Israeli Strikes Kill Hamas Security Chief in Gaza</h2>
+      <div class="cols" style="margin-top:6px;">
+        <div><p class="body">Israeli airstrikes on Tuesday killed Naeem Abu Nahel, the director of Hamas&rsquo;s internal security apparatus in Gaza, and six others, including two police officers, medics and police said.</p></div>
+        <div><p class="body">Strikes the day before killed at least three people in Gaza, among them a man working for the United Nations refugee agency.</p></div>
+      </div>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">Ukraine &middot; Zaporizhzhia</div>
+      <h3>Russian Strike Kills Two, Wounds 40 in Zaporizhzhia</h3>
+      <p class="body" style="margin-top:5px;">An overnight Russian attack struck an apartment building in the city of Zaporizhzhia, killing two people and wounding 40, among them four children, the regional governor said.</p>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">Space &middot; Nato Warning</div>
+      <h3>NATO Warns Over a Possible Russian Nuclear Satellite</h3>
+      <p class="body" style="margin-top:5px;">Reports say Russia could launch a nuclear-armed satellite before the end of 2026. Mark Rutte, the Nato secretary-general, said the alliance would defend against any threat in space.</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- ============ ZONE C: EU | Nvidia | Grok | Myanmar ============ -->
+  <div class="cols zone-c">
+    <div>
+      <div class="kicker black">Brussels &middot; Sanctions</div>
+      <h3>EU Targets Russia&rsquo;s Banks, Soldiers, Athletes</h3>
+      <p class="body" style="margin-top:5px;">The EU proposed sanctions on Russia&rsquo;s banks, soldiers and athletes, and a ban on Russian flags at sporting events. Seven countries backed travel limits.</p>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">Business &middot; Nvidia</div>
+      <h3>Nvidia Reinstates Huang After Trump&rsquo;s Push</h3>
+      <p class="body" style="margin-top:5px;">President Trump said he persuaded Nvidia to reinstate its chief executive, Jensen Huang. Mr. Trump&rsquo;s holdings gained as much as $15 million, and Congress pressed on with its China chip inquiry.</p>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">Washington &middot; AI in Court</div>
+      <h3>States Sue Musk Companies Over Grok Images</h3>
+      <p class="body" style="margin-top:5px;">States sued Elon Musk&rsquo;s companies over sexualised images made by Grok. Oregon and Virginia sued SpaceX over images said to have been generated by the system.</p>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">London &middot; Myanmar</div>
+      <h3>UK Sanctions Myanmar Leaders After ICJ Ruling</h3>
+      <p class="body" style="margin-top:5px;">Britain sanctioned Myanmar&rsquo;s president and military figures after the ICJ ruled Myanmar committed genocide against the Rohingya in 2017. Landmine casualties hit a five-year high of 7,000.</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- ============ ZONE D: Nepal | Hasina ============ -->
+  <div class="cols zone-d">
+    <div>
+      <div class="kicker black">Asia &middot; Earthquake</div>
+      <h3>5.4 Earthquake Hits Nepal&rsquo;s Koshi Province</h3>
+      <p class="body" style="margin-top:4px;">A magnitude 5.4 earthquake struck Nepal&rsquo;s Koshi Province, with tremors felt across India, Bhutan and Bangladesh.</p>
+    </div>
+    <div class="vrule">
+      <div class="kicker black">Dhaka &middot; The Return</div>
+      <h3>Hasina Plans to Fly Home on 16 December</h3>
+      <p class="body" style="margin-top:4px;">Sheikh Hasina, the ousted prime minister of Bangladesh, plans to return home on 16 December. A minister warned she could come back &ldquo;in handcuffs&rdquo;.</p>
+    </div>
+  </div>
+
+  <!-- ============ ALSO TODAY ============ -->
+  <div class="also">
+    <b>Also Today</b> &nbsp;&mdash;&nbsp; South Korea offers rewards of up to $375,000 to catch students using AI to cheat in exams.
+  </div>
+
+  <div class="footer">
+    <span>All stories as reported on 24 November 2026</span>
+    <span>Sources: Just Security &middot; SCMP &middot; Reuters &middot; BBC &middot; The Statesman &middot; Saudi Gazette &middot; Al Jazeera &middot; UN News</span>
+  </div>
+
+</div>
+</body>
+</html>

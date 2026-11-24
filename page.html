@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Day — 24 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    font-family: "Liberation Serif", "DejaVu Serif", Georgia, serif;
+    background: #0b1a2b;
+    color: #141414;
+    display: flex; flex-direction: column;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    height: 86px; flex: 0 0 86px; text-align: center;
+    background: #0b1a2b; padding-top: 11px; border-bottom: 3px solid #c8102e;
+  }
+  .masthead h1 {
+    font-weight: 900; font-size: 50px; letter-spacing: 3px; line-height: 1;
+    color: #f6efdd;
+  }
+  .masthead h1 em { font-style: normal; color: #e03131; }
+  .masthead .dateline {
+    margin-top: 6px; font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 14px; font-weight: 700; letter-spacing: 3.5px; color: #e8a33d;
+    text-transform: uppercase;
+  }
+  .masthead .dateline b { color: #f6efdd; font-size: 17px; letter-spacing: 4px; }
+
+  /* ---------- hero map ---------- */
+  .hero { height: 296px; flex: 0 0 296px; background: #0a1826; position: relative; }
+  .hero svg { display: block; }
+  .herocap {
+    height: 28px; flex: 0 0 28px; background: #081222;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 28px;
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 2.5px; color: #e8a33d;
+    text-transform: uppercase;
+  }
+  .herocap span:last-child { color: #7fa8bd; letter-spacing: 1.5px; }
+
+  /* ---------- lead ---------- */
+  .lead {
+    height: 146px; flex: 0 0 146px; background: #f6efdd;
+    display: flex; gap: 20px; padding: 11px 28px;
+    border-bottom: 3px solid #141414;
+  }
+  .lead-text { flex: 1 1 620px; }
+  .kicker {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 13px; font-weight: 800; letter-spacing: 3px; color: #c8102e;
+    text-transform: uppercase; margin-bottom: 4px;
+  }
+  .kicker .num {
+    display: inline-block; background: #c8102e; color: #fff; border-radius: 50%;
+    width: 18px; height: 18px; line-height: 18px; text-align: center;
+    font-size: 11px; margin-right: 6px; vertical-align: 1px;
+  }
+  .lead-text h2 { font-size: 32px; line-height: 1.05; font-weight: 900; letter-spacing: -0.3px; }
+  .lead-text .deck { font-size: 15px; line-height: 1.35; margin-top: 5px; color: #2b2b2b; }
+  .lead-text .deck b { color: #141414; }
+  .lead-art { flex: 0 0 300px; align-self: center; }
+
+  /* ---------- story grid ---------- */
+  .grid {
+    flex: 1 1 auto; background: #f6efdd; padding: 10px 28px 0;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .card {
+    background: #fffdf4; border: 1px solid #d8cfb8; border-top: 3px solid #141414;
+    position: relative; overflow: hidden;
+  }
+  .card .scene { height: 52px; }
+  .card .scene svg { display: block; width: 100%; height: 52px; }
+  .card .num {
+    position: absolute; top: 5px; left: 5px; width: 22px; height: 22px;
+    border-radius: 50%; background: #c8102e; color: #fff;
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 12.5px; font-weight: 800; line-height: 22px; text-align: center;
+    border: 1.5px solid #fff;
+  }
+  .card .body { padding: 5px 10px 3px; }
+  .card .tag {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 10px; font-weight: 800; letter-spacing: 2px; color: #c8102e;
+    text-transform: uppercase; margin-bottom: 2px;
+  }
+  .card h4 {
+    font-size: 16px; line-height: 1.12; font-weight: 900;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .card p {
+    font-size: 11.5px; line-height: 1.3; margin-top: 3px; color: #2b2b2b;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  /* ---------- footer ---------- */
+  .footer {
+    height: 26px; flex: 0 0 26px; background: #081222;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 11px; letter-spacing: 0.8px; color: #8fa9bb;
+  }
+  .footer b { color: #e8a33d; }
+</style>
+</head>
+<body>
+
+  <header class="masthead">
+    <h1>THE WORLD <em>IN ONE DAY</em></h1>
+    <div class="dateline">Tuesday, <b>24 November 2026</b> &nbsp;&middot;&nbsp; Ten stories &nbsp;&middot;&nbsp; One day on edge</div>
+  </header>
+
+  <section class="hero">
+    <svg viewBox="0 0 1024 296" width="1024" height="296" aria-label="World map of the day's flashpoints">
+      <defs>
+        <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0e2438"/>
+          <stop offset="1" stop-color="#081222"/>
+        </linearGradient>
+        <linearGradient id="landGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#35637a"/>
+          <stop offset="1" stop-color="#24475c"/>
+        </linearGradient>
+        <radialGradient id="gulfGlow" cx="0.64" cy="0.38" r="0.16">
+          <stop offset="0" stop-color="#e8a33d" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#e8a33d" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1024" height="296" fill="url(#sea)"/>
+      <rect width="1024" height="296" fill="url(#gulfGlow)"/>
+      <!-- graticule -->
+      <g stroke="#ffffff" stroke-opacity="0.07" stroke-width="1">
+        <line x1="128" y1="0" x2="128" y2="296"/><line x1="256" y1="0" x2="256" y2="296"/>
+        <line x1="384" y1="0" x2="384" y2="296"/><line x1="512" y1="0" x2="512" y2="296"/>
+        <line x1="640" y1="0" x2="640" y2="296"/><line x1="768" y1="0" x2="768" y2="296"/>
+        <line x1="896" y1="0" x2="896" y2="296"/>
+        <line x1="0" y1="60" x2="1024" y2="60"/><line x1="0" y1="120" x2="1024" y2="120"/>
+        <line x1="0" y1="180" x2="1024" y2="180"/><line x1="0" y1="240" x2="1024" y2="240"/>
+      </g>
+      <!-- ocean labels -->
+      <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="700"
+         letter-spacing="3" fill="#ffffff" fill-opacity="0.22">
+        <text x="18" y="212" transform="rotate(-90 18 212)">NORTH PACIFIC</text>
+        <text x="330" y="168">ATLANTIC OCEAN</text>
+        <text x="690" y="212">INDIAN OCEAN</text>
+        <text x="110" y="248">SOUTH PACIFIC</text>
+      </g>
+      <!-- landmasses -->
+      <g fill="url(#landGrad)" stroke="#6fa8bd" stroke-width="1.2" stroke-linejoin="round">
+        <path d="M58,66 L84,36 L138,24 L196,28 L250,40 L284,62 L296,86 L264,104 L250,128 L234,140 L216,130 L208,150 L194,160 L170,148 L152,130 L120,114 L86,98 L58,84 Z"/>
+        <path d="M316,32 L340,20 L358,30 L346,50 L322,48 Z"/>
+        <path d="M258,152 L296,144 L330,156 L350,186 L342,226 L320,264 L298,260 L280,220 L264,184 L254,162 Z"/>
+        <path d="M484,60 L498,38 L526,32 L546,46 L540,64 L518,74 L496,78 L482,70 Z"/>
+        <path d="M460,48 L472,40 L478,52 L466,60 Z"/>
+        <path d="M514,30 L532,22 L538,34 L522,40 Z"/>
+        <path d="M466,100 L512,88 L552,94 L574,108 L576,124 L564,142 L552,170 L540,200 L526,222 L510,216 L494,188 L474,160 L458,128 L460,108 Z"/>
+        <path d="M570,196 L580,190 L584,206 L572,212 Z"/>
+        <path d="M556,50 L606,32 L692,26 L792,30 L884,44 L922,64 L906,100 L880,124 L852,130 L826,120 L790,110 L730,100 L670,96 L610,98 L566,92 L556,68 Z"/>
+        <path d="M634,112 L660,106 L670,130 L658,156 L640,154 L630,130 Z"/>
+        <path d="M700,114 L726,110 L732,142 L718,176 L704,152 Z"/>
+        <path d="M774,130 L788,126 L794,158 L784,178 L776,152 Z"/>
+        <path d="M914,64 L922,58 L926,76 L918,84 Z"/>
+        <path d="M924,88 L930,84 L932,96 L924,98 Z"/>
+        <ellipse cx="830" cy="170" rx="10" ry="4"/>
+        <ellipse cx="860" cy="175" rx="12" ry="4"/>
+        <ellipse cx="890" cy="168" rx="9" ry="4"/>
+        <path d="M798,210 L862,204 L894,218 L880,244 L820,246 L792,228 Z"/>
+        <path d="M930,252 L938,246 L940,260 L930,262 Z"/>
+      </g>
+      <!-- satellite orbit arc -->
+      <path d="M440,44 Q600,6 750,32" fill="none" stroke="#e8a33d" stroke-width="1.6" stroke-dasharray="5 5"/>
+      <g transform="translate(660,14) scale(1.5)">
+        <rect x="-14" y="-4" width="10" height="8" fill="#e8a33d"/>
+        <rect x="4" y="-4" width="10" height="8" fill="#e8a33d"/>
+        <rect x="-5" y="-6" width="10" height="12" fill="#f6efdd" stroke="#0b1a2b" stroke-width="1"/>
+        <line x1="0" y1="-6" x2="0" y2="-12" stroke="#f6efdd" stroke-width="1.6"/>
+        <circle cx="0" cy="-13" r="2" fill="#e03131"/>
+      </g>
+      <!-- leader lines -->
+      <g stroke="#f6efdd" stroke-opacity="0.65" stroke-width="1">
+        <line x1="656" y1="124" x2="648" y2="166"/>
+        <line x1="600" y1="100" x2="528" y2="94"/>
+        <line x1="618" y1="62" x2="636" y2="52"/>
+        <line x1="518" y1="56" x2="408" y2="48"/>
+        <line x1="168" y1="100" x2="172" y2="120"/>
+        <line x1="296" y1="84" x2="308" y2="70"/>
+        <line x1="746" y1="98" x2="710" y2="92"/>
+        <line x1="796" y1="122" x2="804" y2="126"/>
+        <line x1="760" y1="146" x2="778" y2="150"/>
+      </g>
+      <!-- flashpoint labels -->
+      <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="10" font-weight="700"
+         letter-spacing="1" fill="#f6efdd">
+        <text x="640" y="172">1 &middot; THE GULF</text>
+        <text x="448" y="96">2 &middot; GAZA</text>
+        <text x="640" y="52">3 &middot; ZAPORIZHZHIA</text>
+        <text x="724" y="24">4 &middot; SPACE</text>
+        <text x="398" y="48">5 &middot; BRUSSELS</text>
+        <text x="140" y="128">6 &middot; NVIDIA &mdash; USA</text>
+        <text x="312" y="68">7 &middot; GROK SUITS &mdash; USA</text>
+        <text x="808" y="130">8 &middot; MYANMAR</text>
+        <text x="668" y="90">9 &middot; NEPAL</text>
+        <text x="782" y="154">10 &middot; DHAKA</text>
+      </g>
+      <!-- numbered markers -->
+      <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="800" text-anchor="middle">
+        <g><circle cx="658" cy="114" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="658" cy="114" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="658" y="118" fill="#fff">1</text></g>
+        <g><circle cx="610" cy="103" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="610" cy="103" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="610" y="107" fill="#fff">2</text></g>
+        <g><circle cx="612" cy="67" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="612" cy="67" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="612" y="71" fill="#fff">3</text></g>
+        <g><circle cx="600" cy="28" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="600" cy="28" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="600" y="32" fill="#fff">4</text></g>
+        <g><circle cx="524" cy="60" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="524" cy="60" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="524" y="64" fill="#fff">5</text></g>
+        <g><circle cx="165" cy="90" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="165" cy="90" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="165" y="94" fill="#fff">6</text></g>
+        <g><circle cx="293" cy="86" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="293" cy="86" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="293" y="90" fill="#fff">7</text></g>
+        <g><circle cx="790" cy="122" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="790" cy="122" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="790" y="126" fill="#fff">8</text></g>
+        <g><circle cx="748" cy="102" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="748" cy="102" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="748" y="106" fill="#fff">9</text></g>
+        <g><circle cx="764" cy="138" r="13" fill="#e8a33d" fill-opacity="0.25"/><circle cx="764" cy="138" r="10" fill="#d92b2b" stroke="#fff" stroke-width="1.5"/><text x="764" y="142" fill="#fff">10</text></g>
+      </g>
+    </svg>
+  </section>
+
+  <div class="herocap">
+    <span>A world on edge &mdash; the day&rsquo;s flashpoints, numbered 1&ndash;10</span>
+    <span>Map stylised &middot; Numbers match the stories below</span>
+  </div>
+
+  <section class="lead">
+    <div class="lead-text">
+      <div class="kicker"><span class="num">1</span>Middle East &middot; The blockade</div>
+      <h2>Iran vows to defy the US naval blockade</h2>
+      <p class="deck">Tehran says it will use <b>all its tools</b> against the blockade, reinstated
+      on 14 July after a June lifting. Vance and Rubio met Qatar&rsquo;s prime minister
+      at the White House.</p>
+    </div>
+    <div class="lead-art">
+      <svg viewBox="0 0 300 116" width="300" height="116" aria-label="Warships at a blockade line">
+        <defs>
+          <linearGradient id="leadSea" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#274b63"/><stop offset="1" stop-color="#0e2438"/>
+          </linearGradient>
+        </defs>
+        <rect width="300" height="116" fill="url(#leadSea)"/>
+        <g stroke="#f6efdd" stroke-opacity="0.25" stroke-width="1">
+          <path d="M0,88 Q40,84 80,88 T160,88 T240,88 T300,88" fill="none"/>
+          <path d="M0,100 Q50,96 100,100 T200,100 T300,100" fill="none"/>
+        </g>
+        <line x1="150" y1="6" x2="150" y2="110" stroke="#e03131" stroke-width="2.5" stroke-dasharray="7 6"/>
+        <g fill="#0b1a2b">
+          <path d="M28,78 L28,62 L38,62 L38,54 L44,54 L44,62 L96,62 L96,70 L108,70 L104,78 Z"/>
+          <rect x="52" y="46" width="4" height="16"/><rect x="70" y="40" width="4" height="22"/>
+          <path d="M188,80 L188,66 L198,66 L198,58 L204,58 L204,66 L248,66 L248,73 L260,73 L256,80 Z"/>
+          <rect x="212" y="50" width="4" height="16"/>
+        </g>
+        <g fill="#e8a33d">
+          <circle cx="54" cy="44" r="2.5"/><circle cx="72" cy="38" r="2.5"/><circle cx="214" cy="48" r="2.5"/>
+        </g>
+        <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="10" font-weight="800" letter-spacing="1.5" fill="#f6efdd">
+          <text x="8" y="16">US NAVAL BLOCKADE</text>
+          <text x="158" y="16" fill="#e8a33d">BACK 14 JULY</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="grid">
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="City skyline at dusk">
+          <defs><linearGradient id="gazaSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3a2b4d"/><stop offset="0.6" stop-color="#8a3b2e"/><stop offset="1" stop-color="#d98a3d"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#gazaSky)"/>
+          <g fill="#1c1426">
+            <rect x="0" y="28" width="26" height="24"/><rect x="30" y="20" width="20" height="32"/>
+            <rect x="54" y="32" width="30" height="20"/><rect x="88" y="14" width="16" height="38"/>
+            <rect x="108" y="25" width="26" height="27"/><rect x="138" y="34" width="34" height="18"/>
+            <rect x="176" y="22" width="18" height="30"/><rect x="198" y="30" width="28" height="22"/>
+            <rect x="230" y="18" width="16" height="34"/><rect x="250" y="28" width="30" height="24"/>
+            <rect x="284" y="24" width="30" height="28"/>
+          </g>
+          <g fill="#f6efdd" fill-opacity="0.85">
+            <rect x="36" y="25" width="3" height="4"/><rect x="92" y="20" width="3" height="4"/>
+            <rect x="114" y="31" width="3" height="4"/><rect x="182" y="27" width="3" height="4"/>
+            <rect x="236" y="24" width="3" height="4"/>
+          </g>
+          <g fill="#8d8d8d" fill-opacity="0.55">
+            <path d="M96,14 Q100,4 96,-2 Q92,4 96,14 Z"/>
+            <path d="M240,18 Q244,8 240,0 Q236,8 240,18 Z"/>
+          </g>
+          <circle cx="292" cy="10" r="6" fill="none" stroke="#e03131" stroke-width="2"/>
+          <circle cx="292" cy="10" r="1.8" fill="#e03131"/>
+        </svg>
+      </div>
+      <span class="num">2</span>
+      <div class="body">
+        <div class="tag">Gaza &middot; Targeted strike</div>
+        <h4>Israeli strikes kill Hamas security chief in Gaza</h4>
+        <p>Airstrikes killed Hamas security chief Naeem Abu Nahel and six others, including two police officers.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Struck apartment building">
+          <defs><linearGradient id="zapSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#232a3a"/><stop offset="1" stop-color="#5c4a3a"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#zapSky)"/>
+          <g>
+            <path d="M120,52 V12 h74 v40 Z" fill="#c9b896"/>
+            <path d="M157,12 L166,22 L160,30 L168,38 L162,46 L166,52" fill="none" stroke="#c8102e" stroke-width="3"/>
+            <g fill="#2b2b2b">
+              <rect x="128" y="18" width="8" height="7"/><rect x="142" y="18" width="8" height="7"/>
+              <rect x="128" y="30" width="8" height="7"/><rect x="142" y="42" width="8" height="7"/>
+              <rect x="172" y="18" width="8" height="7"/><rect x="172" y="30" width="8" height="7"/>
+            </g>
+            <g fill="#8a7a5c">
+              <path d="M100,52 L118,38 L136,52 Z"/><path d="M196,52 L210,40 L226,52 Z"/>
+              <path d="M140,52 L152,44 L164,52 Z"/>
+            </g>
+          </g>
+          <g fill="#e8a33d"><circle cx="60" cy="12" r="3"/><circle cx="250" cy="9" r="2.5"/></g>
+        </svg>
+      </div>
+      <span class="num">3</span>
+      <div class="body">
+        <div class="tag">Ukraine &middot; Zaporizhzhia</div>
+        <h4>Russian strike kills two, wounds 40 in Zaporizhzhia</h4>
+        <p>An overnight strike hit an apartment building; two killed, 40 wounded, including four children.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Satellite over Earth">
+          <defs><linearGradient id="spaceSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#050a14"/><stop offset="1" stop-color="#12263e"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#spaceSky)"/>
+          <g fill="#f6efdd"><circle cx="30" cy="10" r="1.5"/><circle cx="70" cy="7" r="1.2"/><circle cx="120" cy="13" r="1.5"/><circle cx="260" cy="9" r="1.2"/><circle cx="290" cy="17" r="1.5"/></g>
+          <circle cx="157" cy="96" r="46" fill="#2e6f8e"/>
+          <path d="M111,96 a46,46 0 0 1 92,0" fill="none" stroke="#7fc4d8" stroke-width="2"/>
+          <path d="M20,22 Q157,-12 294,20" fill="none" stroke="#e8a33d" stroke-width="1.6" stroke-dasharray="5 5"/>
+          <g transform="translate(200,10)">
+            <rect x="-16" y="-4" width="11" height="8" fill="#e8a33d"/>
+            <rect x="5" y="-4" width="11" height="8" fill="#e8a33d"/>
+            <rect x="-6" y="-6" width="12" height="12" fill="#f6efdd" stroke="#0b1a2b" stroke-width="1"/>
+            <circle cx="0" cy="-11" r="2.2" fill="#e03131"/>
+          </g>
+          <path d="M278,38 l7,12 h-14 Z" fill="#e03131"/>
+          <text x="272" y="34" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="9" font-weight="800" fill="#f6efdd" text-anchor="middle">!</text>
+        </svg>
+      </div>
+      <span class="num">4</span>
+      <div class="body">
+        <div class="tag">Space &middot; NATO warning</div>
+        <h4>NATO warns over a possible Russian nuclear satellite</h4>
+        <p>Russia could launch a nuclear-armed satellite before the end of 2026; NATO vows to defend against space threats.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="EU stars and a banned flag">
+          <defs><linearGradient id="euSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1e3a6e"/><stop offset="1" stop-color="#2c5290"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#euSky)"/>
+          <g fill="#ffd617">
+            <circle cx="183" cy="26" r="2.4"/><circle cx="175" cy="44" r="2.4"/><circle cx="157" cy="50" r="2.4"/>
+            <circle cx="139" cy="44" r="2.4"/><circle cx="131" cy="26" r="2.4"/><circle cx="139" cy="8" r="2.4"/>
+            <circle cx="157" cy="2" r="2.4"/><circle cx="175" cy="8" r="2.4"/>
+          </g>
+          <g>
+            <rect x="136" y="15" width="42" height="22" fill="#f6efdd" stroke="#141414" stroke-width="1.5"/>
+            <line x1="142" y1="21" x2="172" y2="21" stroke="#141414" stroke-width="1.5"/>
+            <line x1="142" y1="27" x2="172" y2="27" stroke="#c8102e" stroke-width="1.5"/>
+            <line x1="142" y1="33" x2="164" y2="33" stroke="#141414" stroke-width="1.5"/>
+            <circle cx="216" cy="34" r="12" fill="#fff" stroke="#c8102e" stroke-width="2"/>
+            <line x1="208" y1="42" x2="224" y2="26" stroke="#c8102e" stroke-width="2.5"/>
+          </g>
+        </svg>
+      </div>
+      <span class="num">5</span>
+      <div class="body">
+        <div class="tag">Brussels &middot; Sanctions</div>
+        <h4>EU targets Russia&rsquo;s banks, soldiers and athletes</h4>
+        <p>The package also proposes banning Russian flags at sports events; seven countries back EU travel limits.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Computer chip and rising chart">
+          <defs><linearGradient id="chipBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0d1f14"/><stop offset="1" stop-color="#1d4d2b"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#chipBg)"/>
+          <g stroke="#76b900" stroke-width="2" fill="none">
+            <rect x="128" y="9" width="38" height="34" fill="#0d1f14"/>
+            <rect x="140" y="21" width="14" height="14" fill="#76b900" stroke="none"/>
+            <line x1="136" y1="9" x2="136" y2="4"/><line x1="147" y1="9" x2="147" y2="4"/><line x1="158" y1="9" x2="158" y2="4"/>
+            <line x1="136" y1="43" x2="136" y2="48"/><line x1="147" y1="43" x2="147" y2="48"/><line x1="158" y1="43" x2="158" y2="48"/>
+            <line x1="128" y1="18" x2="123" y2="18"/><line x1="128" y1="26" x2="123" y2="26"/><line x1="128" y1="34" x2="123" y2="34"/>
+            <line x1="166" y1="18" x2="171" y2="18"/><line x1="166" y1="26" x2="171" y2="26"/><line x1="166" y1="34" x2="171" y2="34"/>
+          </g>
+          <path d="M196,40 L224,28 L244,31 L276,10" fill="none" stroke="#e8a33d" stroke-width="3"/>
+          <path d="M266,10 h10 v10" fill="none" stroke="#e8a33d" stroke-width="3"/>
+          <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="800" fill="#f6efdd">
+            <text x="32" y="21">NVIDIA</text>
+            <text x="32" y="38" fill="#76b900">UP TO $15M</text>
+          </g>
+        </svg>
+      </div>
+      <span class="num">6</span>
+      <div class="body">
+        <div class="tag">Business &middot; Nvidia</div>
+        <h4>Nvidia reinstates Jensen Huang after Trump&rsquo;s push</h4>
+        <p>Trump said he got the CEO reinstated; his Nvidia gains hit up to $15M as Congress&rsquo;s chip probe presses on.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Courthouse and gavel">
+          <defs><linearGradient id="courtBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2b2b40"/><stop offset="1" stop-color="#4a3a5c"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#courtBg)"/>
+          <g fill="#e8dcc0">
+            <path d="M118,12 L157,2 L196,12 Z"/>
+            <rect x="122" y="14" width="8" height="26"/><rect x="140" y="14" width="8" height="26"/>
+            <rect x="166" y="14" width="8" height="26"/><rect x="184" y="14" width="8" height="26"/>
+            <rect x="116" y="40" width="82" height="5"/>
+            <rect x="112" y="45" width="90" height="5"/>
+          </g>
+          <g transform="rotate(-24 262 30)">
+            <rect x="254" y="16" width="16" height="12" rx="2" fill="#8a5a2e"/>
+            <rect x="260" y="28" width="4" height="18" fill="#8a5a2e"/>
+          </g>
+        </svg>
+      </div>
+      <span class="num">7</span>
+      <div class="body">
+        <div class="tag">Washington &middot; AI in court</div>
+        <h4>States sue Musk companies over Grok images</h4>
+        <p>Oregon and Virginia sued SpaceX over alleged Grok abuse images; South Korea offers $375,000 to catch AI cheats.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Scales of justice">
+          <defs><linearGradient id="justBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4a1620"/><stop offset="1" stop-color="#7a2430"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#justBg)"/>
+          <g stroke="#e8c85a" stroke-width="2.5" fill="none" stroke-linecap="round">
+            <line x1="157" y1="7" x2="157" y2="45"/>
+            <line x1="118" y1="14" x2="196" y2="14"/>
+            <line x1="118" y1="14" x2="106" y2="30"/><line x1="118" y1="14" x2="130" y2="30"/>
+            <line x1="196" y1="14" x2="184" y2="30"/><line x1="196" y1="14" x2="208" y2="30"/>
+            <path d="M100,30 a12,7 0 0 0 24,0 Z" fill="#e8c85a" stroke="none"/>
+            <path d="M184,30 a12,7 0 0 0 24,0 Z" fill="#e8c85a" stroke="none"/>
+            <circle cx="157" cy="7" r="3.5" fill="#e8c85a" stroke="none"/>
+            <line x1="140" y1="45" x2="174" y2="45"/>
+          </g>
+        </svg>
+      </div>
+      <span class="num">8</span>
+      <div class="body">
+        <div class="tag">London &middot; Myanmar</div>
+        <h4>UK sanctions Myanmar leaders after ICJ ruling</h4>
+        <p>Sanctions follow the ICJ ruling of genocide against the Rohingya in 2017; landmine casualties hit 7,000.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Mountains and seismograph">
+          <defs><linearGradient id="quakeSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#31435c"/><stop offset="1" stop-color="#8a7a5c"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#quakeSky)"/>
+          <g>
+            <path d="M0,52 L70,8 L140,52 Z" fill="#5c6b7d"/>
+            <path d="M70,8 L88,22 L70,28 L54,20 Z" fill="#f6efdd"/>
+            <path d="M110,52 L190,4 L270,52 Z" fill="#3d4c60"/>
+            <path d="M190,4 L210,20 L190,26 L172,18 Z" fill="#f6efdd"/>
+            <path d="M240,52 L300,20 L314,32 L314,52 Z" fill="#6b7a8c"/>
+          </g>
+          <path d="M0,42 L40,42 L52,32 L64,48 L76,38 L88,44 L110,42 L130,42 L142,30 L154,48 L166,40 L180,44 L314,44" fill="none" stroke="#e03131" stroke-width="2.5"/>
+          <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#fff">
+            <text x="252" y="16">5.4</text>
+          </g>
+        </svg>
+      </div>
+      <span class="num">9</span>
+      <div class="body">
+        <div class="tag">Asia &middot; Earthquake</div>
+        <h4>5.4 earthquake hits Nepal&rsquo;s Koshi Province</h4>
+        <p>Tremors were felt across India, Bhutan and Bangladesh after the quake struck Koshi Province.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="scene">
+        <svg viewBox="0 0 314 52" preserveAspectRatio="xMidYMid slice" aria-label="Airplane returning home">
+          <defs><linearGradient id="planeSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7fb3c8"/><stop offset="1" stop-color="#f6efdd"/>
+          </linearGradient></defs>
+          <rect width="314" height="52" fill="url(#planeSky)"/>
+          <g fill="#f6efdd" fill-opacity="0.8">
+            <ellipse cx="60" cy="13" rx="26" ry="7"/><ellipse cx="240" cy="9" rx="30" ry="8"/>
+          </g>
+          <g fill="#141414">
+            <path d="M96,28 Q96,22 108,22 L196,22 Q212,22 220,26 L226,29 L214,33 L196,34 L108,34 Q96,34 96,28 Z"/>
+            <path d="M104,22 L94,8 L103,8 L114,22 Z"/>
+            <path d="M148,34 L172,34 L190,48 L180,48 L160,36 Z"/>
+            <path d="M100,30 L88,24 L92,22 L104,28 Z"/>
+            <ellipse cx="172" cy="42" rx="8" ry="4"/>
+            <ellipse cx="196" cy="40" rx="7" ry="3.5"/>
+          </g>
+          <g fill="#7fb3c8">
+            <circle cx="122" cy="27" r="1.3"/><circle cx="134" cy="27" r="1.3"/><circle cx="146" cy="27" r="1.3"/>
+            <circle cx="158" cy="27" r="1.3"/><circle cx="170" cy="27" r="1.3"/><circle cx="182" cy="27" r="1.3"/>
+          </g>
+          <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="800" fill="#141414">
+            <text x="14" y="48">16 DECEMBER</text>
+          </g>
+        </svg>
+      </div>
+      <span class="num">10</span>
+      <div class="body">
+        <div class="tag">Dhaka &middot; The return</div>
+        <h4>Hasina plans to fly home on 16 December</h4>
+        <p>The ousted prime minister plans to return home &mdash; a minister warns she could return &ldquo;in handcuffs&rdquo;.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="footer">
+    All stories as reported on <b>&nbsp;24 November 2026&nbsp;</b> &middot; Sources: Just Security, SCMP, Reuters, BBC, The Statesman, Saudi Gazette, Al Jazeera, UN News
+  </footer>
+
+</body>
+</html>
